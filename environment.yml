@@ -2,6 +2,9 @@ name: example-environment
 channels:
   - conda-forge
 dependencies:
+  - jupytext
+  - jupyter
+  - notebook
   - numpy
   - psutil
   - toolz
@@ -11,21 +14,17 @@ dependencies:
   - bokeh
   - dask
   - seaborn
-  - plotly_express
-  - seaborn
-  - scipy
-  - statsmodels
-  - patsy
-  - jupytext
-  - plotly==4.8.1
-  - jupyter
-  - notebook
-  - pandas==1.0.3
-  - statsmodels==0.11.1
-  - scipy
-  - patsy==0.5.1
-  - requests
-  - networkx
-  - scikit-image
-  - datashader
-  - pyarrow
+  - pip
+  - pip:
+  # works for regular pip packages
+    - plotly==4.8.1
+    - statsmodels==0.11.1
+    - scipy
+    - patsy==0.5.1
+    - plotly-geo
+    - requests
+    - networkx
+    - scikit-image
+    - datashader
+    - pyarrow
+    - cufflinks==0.17.3
