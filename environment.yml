@@ -29,3 +29,5 @@ dependencies:
     - datashader
     - pyarrow
     - cufflinks==0.17.3
+    - pdoc3>=0.5.3
+    - nbconvert>=5.3.1
